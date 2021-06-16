@@ -25,8 +25,6 @@ public class BiddingManagement {
         NoticeRegistered noticeRegistered = new NoticeRegistered();
         BeanUtils.copyProperties(this, noticeRegistered);
         noticeRegistered.publishAfterCommit();
-
-
     }
 
     @PostUpdate
@@ -34,8 +32,6 @@ public class BiddingManagement {
         SuccessBidderRegistered successBidderRegistered = new SuccessBidderRegistered();
         BeanUtils.copyProperties(this, successBidderRegistered);
         successBidderRegistered.publishAfterCommit();
-
-
     }
 
     @PostRemove
@@ -43,8 +39,6 @@ public class BiddingManagement {
         NoticeCanceled noticeCanceled = new NoticeCanceled();
         BeanUtils.copyProperties(this, noticeCanceled);
         noticeCanceled.publishAfterCommit();
-
-
     }
 
 
@@ -111,8 +105,4 @@ public class BiddingManagement {
     public void setSuccBidderNm(String succBidderNm) {
         this.succBidderNm = succBidderNm;
     }
-
-
-
-
 }

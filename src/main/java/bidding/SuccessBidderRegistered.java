@@ -8,6 +8,7 @@ public class SuccessBidderRegistered extends AbstractEvent {
     private String title;
     private String demandOrgNm;
     private String succBidderNm;
+    private String phoneNumber;
     
     public Long getId() {
         return id;
@@ -39,7 +40,12 @@ public class SuccessBidderRegistered extends AbstractEvent {
     public void setSuccBidderNm(String succBidderNm) {
         this.succBidderNm = succBidderNm;
     }
-
+    public String getPhoneNumber() {
+        return phoneNumber;
+    }
+    public void setPhoneNumber(String phoneNumber) {
+        this.phoneNumber = phoneNumber;
+    }
     
 }
 

@@ -19,6 +19,7 @@ public class BiddingManagement {
     private String bizInfo;
     private String qualifications;
     private String succBidderNm;
+    private String phoneNumber;
 
     @PostPersist
     public void onPostPersist(){
@@ -105,4 +106,13 @@ public class BiddingManagement {
     public void setSuccBidderNm(String succBidderNm) {
         this.succBidderNm = succBidderNm;
     }
+    
+    public String getPhoneNumber() {
+        return phoneNumber;
+    }
+
+    public void setPhoneNumber(String phoneNumber) {
+        this.phoneNumber = phoneNumber;
+    }
+
 }
